@@ -1,0 +1,14 @@
+.popup__error {
+  position: absolute;
+  top: 43%;
+  color: #ff0000;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.popup__error_second-field {
+  top: 62%;
+}

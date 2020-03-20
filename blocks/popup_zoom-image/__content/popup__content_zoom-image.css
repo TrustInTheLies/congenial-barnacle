@@ -1,0 +1,14 @@
+.popup__content_zoom-image {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 540px) {
+  .popup__content_zoom-image {
+    width: calc(100% - 60px);
+  }
+}
