@@ -28,22 +28,27 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|svg|ico|woff2)$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-          outputPath: "./assets"
-        }
-      },
-      {
         test: /\.(png|jpg|gif|ico|svg)$/,
         use: [
-          "file-loader?name=../images/[name].[ext]",
+          {
+            loader: "file-loader",
+            options: {
+              name: "./images/[name].[ext]",
+              esModule: false
+            }
+          },
           {
             loader: "image-webpack-loader",
             options: {}
           }
         ]
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        loader: "file-loader",
+        options: {
+          name: "./vendor/[name].[ext]"
+        }
       }
     ]
   },

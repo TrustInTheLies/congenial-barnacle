@@ -51,7 +51,7 @@
       <div class="popup_zoom-image">
         <div class="popup__content_zoom-image">
           <img
-            src="./images/close.svg"
+            src="<%=require('./images/close.svg')%>"
             alt=""
             class="popup__close_zoom-image"
           />
@@ -60,7 +60,11 @@
       </div>
       <div class="popup_addcard">
         <div class="popup__content">
-          <img src="./images/close.svg" alt="" class="popup__close" />
+          <img
+            src="<%=require('./images/close.svg')%>"
+            alt=""
+            class="popup__close"
+          />
           <h3 class="popup__title">Новое место</h3>
           <form
             novalidate
@@ -103,7 +107,7 @@
       <div class="popup_edit">
         <div class="popup__content">
           <img
-            src="./images/close.svg"
+            src="<%=require('./images/close.svg')%>"
             alt=""
             class="popup__close popup__close_edit"
           />
