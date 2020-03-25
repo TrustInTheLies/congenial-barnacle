@@ -1,6 +1,6 @@
 {
   "name": "congenial-barnacle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.4.1"
+    "core-js": "^3.4.1",
+    "gh-pages": "^2.2.0"
   }
 }

@@ -25,12 +25,13 @@ const name = document.querySelector(".user-info__name");
 const job = document.querySelector(".user-info__job");
 const nameValue = document.querySelector(".popup__input_type_user-name");
 const jobValue = document.querySelector(".popup__input_type_user-job");
+const url =
+  NODE_ENV === "development"
+    ? "http://praktikum.tk/cohort8"
+    : "https://praktikum.tk/cohort8";
 
 const card = new Card();
-const api = new Api(
-  "https://praktikum.tk/cohort8",
-  "21c2ac68-d624-43ca-90b3-04a9d6cdd7ed"
-);
+const api = new Api(url, "21c2ac68-d624-43ca-90b3-04a9d6cdd7ed");
 
 const cardList = new CardList(places, Card, api);
 const popup = new Popup();

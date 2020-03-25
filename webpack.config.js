@@ -65,7 +65,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: "./index.html",
-      filename: "index.[hash].html"
+      filename: "index.html"
     }),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV)
