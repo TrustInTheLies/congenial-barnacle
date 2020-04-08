@@ -9,5 +9,3 @@
 1. скопировать репозиторий - git clone https://github.com/TrustInTheLies/congenial-barnacle.git -b develop;
 2. npm install,
 3. после установки плагинов - npm run dev.
-
-Лайки и удаление карточки реализованы не полностью, так как являлись доп заданием.
